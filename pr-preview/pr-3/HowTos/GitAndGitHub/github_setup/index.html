@@ -547,9 +547,10 @@
 <h1 id="github-setup">GitHub setup</h1>
 <p>We present here our recommended setup for GitHub.</p>
 <h2 id="two-factor-authentication">Two-factor authentication</h2>
-<p>We recommend to <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication">enable 2-factor authentication</a> on your GitHub account for highen security. </p>
+<p>We recommend to <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication">enable 2-factor authentication</a> on your GitHub account for higher security. </p>
 <h2 id="ssh-authentification">SSH authentification</h2>
-<p>ACCESS users are used to SSH for connecting to NCI. We recommend setting up <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh">SSH keys</a> for pulling from and pushing to GitHub repositories. Remember to set a passphrase for your key, do not use passphrase-less keys.</p>
+<p>ACCESS users are used to SSH for connecting to NCI. We recommend setting up <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh">SSH keys</a> for pulling from and pushing to GitHub repositories. Remember to set a passphrase for your key, do not use passphrase-less keys.
+Use <a href="https://docs.github.com/en/developers/overview/using-ssh-agent-forwarding">SSH agent forwarding</a> to securely forward ssh keys from your own machine to use them on NCI machines.</p>
 <h2 id="commit-signature-verification">Commit signature verification</h2>
 <p>It is <a href="https://betterprogramming.pub/why-and-how-you-should-sign-all-your-git-commits-94435516edae">trivially easy to impersonate another user</a> when committing to git. This does not lead to elevated privileges, but could be exploited in a social hack, causing commits to be accepted based on an assumption of identity.</p>
 <p>Code signing gives others confidence that <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification">code commits come from a trusted source</a>. Code signing is not required to contribute to ACCESSHub, but it is for contributing to most repositories in the <a href="https://github.com/ACCESS-NRI">ACCESS-NRI Organisation</a>.</p>

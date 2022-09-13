@@ -18,10 +18,15 @@ Despite its name, [this Quickstart guide](https://docs.github.com/en/get-started
  - [Learn about pull requests](https://docs.github.com/en/get-started/quickstart/github-flow#create-a-pull-request). It includes information about the text formatting used on GitHub, Markdown.
  - [Learn how to work with code reviews on GitHub](https://docs.github.com/en/get-started/quickstart/github-flow#address-review-comments)
 
+## Git Documentation
+[Git User Manual](https://git-scm.com/docs/user-manual/)
+
 ## Cheatsheets
 [Git cheatsheet](https://training.github.com/downloads/github-git-cheat-sheet/)
 
 [Git cheatsheet for SVN users](https://www.git-tower.com/blog/git-for-subversion-users-cheat-sheet/)
+
+[Git cheatsheet for advanced users](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/gitcore-tutorial.html)
 
 ## Graphical clients and IDE
 

@@ -18,7 +18,7 @@ Despite its name, [this Quickstart guide](https://docs.github.com/en/get-started
  - [Learn about pull requests](https://docs.github.com/en/get-started/quickstart/github-flow#create-a-pull-request). It includes information about the text formatting used on GitHub, Markdown.
  - [Learn how to work with code reviews on GitHub](https://docs.github.com/en/get-started/quickstart/github-flow#address-review-comments)
 
-## Git Documentation
+## Official Git Documentation
 [Git User Manual](https://git-scm.com/docs/user-manual/)
 
 ## Cheatsheets

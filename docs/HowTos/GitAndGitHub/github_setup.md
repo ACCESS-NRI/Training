@@ -3,16 +3,16 @@ We present here our recommended setup for GitHub.
 
 ## Two-factor authentication
 
-We recommend to [enable 2-factor authentication](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication) on your GitHub account for higher security. 
+We recommend to [enable 2-factor authentication][2FA] on your GitHub account for higher security. 
 
 ## SSH authentification
-ACCESS users are used to SSH for connecting to NCI. We recommend setting up [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) for pulling from and pushing to GitHub repositories. Remember to set a passphrase for your key, do not use passphrase-less keys.
-Use [SSH agent forwarding](https://docs.github.com/en/developers/overview/using-ssh-agent-forwarding) to securely forward ssh keys from your own machine to use them on NCI machines.
+ACCESS users are used to SSH for connecting to NCI. We recommend setting up [SSH keys][SSHkeys] for pulling from and pushing to GitHub repositories. Remember to set a passphrase for your key, do not use passphrase-less keys.
+Use [SSH agent forwarding][SSHagent] to securely forward ssh keys from your own machine to use them on NCI machines.
 ## Commit signature verification
 
-It is [trivially easy to impersonate another user](https://betterprogramming.pub/why-and-how-you-should-sign-all-your-git-commits-94435516edae) when committing to git. This does not lead to elevated privileges, but could be exploited in a social hack, causing commits to be accepted based on an assumption of identity.
+It is [trivially easy to impersonate another user][Impersonate] when committing to git. This does not lead to elevated privileges, but could be exploited in a social hack, causing commits to be accepted based on an assumption of identity.
 
-Code signing gives others confidence that [code commits come from a trusted source](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification). Code signing is not required to contribute to ACCESSHub, but it is for contributing to most repositories in the [ACCESS-NRI Organisation](https://github.com/ACCESS-NRI).
+Code signing gives others confidence that [code commits come from a trusted source][CommitSign]. Code signing is not required to contribute to ACCESSHub, but it is for contributing to most repositories in the [ACCESS-NRI Organisation][ACCESS-NRI].
 
 GitHub is the code hosting platform used by ACCESS-NRI, and GitHub supports code signing. You know when a commit is correctly signed because the commit has a "Verified" badge:
 
@@ -27,7 +27,7 @@ Since version 2.34.0 git supports code signing with ssh keys. Most people are fa
 ???+ info
     git 2.37.3 is available as a module on gadi (`module load git/2.37.3`) 
  
-First [add your signing key to GitHub](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification). Either use an existing SSH key, or create a new one.
+First [add your signing key to GitHub][AddKey]. Either use an existing SSH key, or create a new one.
 
 Make sure your key is on your keychain and then login to gadi with key forwarding. 
 
@@ -38,7 +38,7 @@ Make sure your key is on your keychain and then login to gadi with key forwardin
 
         ssh-add --apple-use-keychain <path to keychain>
 
-    [Linux](https://wiki.archlinux.org/title/SSH_keys#SSH_agents): 
+    [Linux][LinuxAgent]: 
     
         ssh-add <path to keychain>
 
@@ -62,4 +62,11 @@ To automatically sign *all* commits and tags in *all* repositories with your ssh
 
 [https://calebhearth.com/sign-git-with-ssh](https://calebhearth.com/sign-git-with-ssh) 
 
- 
+[2FA]: https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication 
+[SSHkeys]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+[SSHagent]: https://docs.github.com/en/developers/overview/using-ssh-agent-forwarding
+[Impersonate]: https://betterprogramming.pub/why-and-how-you-should-sign-all-your-git-commits-94435516edae
+[CommitSign]: https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification
+[ACCESS-NRI]: https://github.com/ACCESS-NRI
+[AddKey]: https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification
+[LinuxAgent]: https://wiki.archlinux.org/title/SSH_keys#SSH_agents

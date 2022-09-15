@@ -1,9 +1,3 @@
-Git is the industry standard for version control. Numerous tools have been developed to support code management using Git. These tools make it faster and more user-friendly to manage code using industry's best practice. As such, knowing to use Git is very valuable to anyone developing code.
-
-GitHub is a code hosting platform for version control and collaboration. Using GitHub or other similar platforms with Git for your code development allows you to safely back up your code and to open your work to collaboration.
-
-This how-to focuses on using both Git and GitHub together for code development and collaboration.
-
 ## A quick introduction
 [A quick introduction of using Git and GitHub](https://codewithchris.com/github-tutorial/) showing how to record your work with Git and connect with GitHub. 
 

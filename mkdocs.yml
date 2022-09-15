@@ -6,6 +6,9 @@ repo_name: Training
 # Material default to a "master" branch, need to change to "main"
 edit_uri: edit/main/docs/
 
+# Copyright
+copyright: Licensed under CC-BY 4.0 2022 by ACCESS-NRI
+
 # Theme
 theme:
   name: material

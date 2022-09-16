@@ -47,7 +47,9 @@ markdown_extensions:
   
 # Navigation
 nav:
-  - Welcome: index.md
+  - Welcome: 
+    - index.md
+    - License: LICENSE.md
   - How-tos:
     - Git and GitHub:
       - HowTos/GitAndGitHub/index.md

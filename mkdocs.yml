@@ -6,12 +6,11 @@ repo_name: Training
 # Material default to a "master" branch, need to change to "main"
 edit_uri: edit/main/docs/
 
-# Copyright
-copyright: Licensed under CC-BY 4.0 2022 by ACCESS-NRI
 
 # Theme
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - scheme: light
       primary: indigo
@@ -25,14 +24,32 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-
-
   features:
     - navigation.instant
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
   logo: assets/ACCESSLogoJustPlanet.png
+
+# Footer
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/ACCESS_NRI
+      name: ACCESS-NRI on Twitter
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/access-nri
+      name: ACCESS-NRI on Linkedin
+    - icon: fontawesome/brands/slack
+      link: https://access-nri.slack.com/
+      name: Join ACCESS-NRI Slack Channel
+
+copyright: Copyright &copy; 2022 - ACCESS-NRI
+
+extra_css:
+  - css/fontello.css
 
 # Extensions
 markdown_extensions: 
@@ -47,7 +64,9 @@ markdown_extensions:
   
 # Navigation
 nav:
-  - Welcome: index.md
+  - Welcome: 
+    - index.md
+    - License: LICENSE.md
   - How-tos:
     - Git and GitHub:
       - HowTos/GitAndGitHub/index.md

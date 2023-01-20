@@ -4,12 +4,7 @@ Make sure you set up git on every machine (including servers such as HPCs for ex
 
 ## Config name and email
 
-All commits on git have information about the author with the name and email address. Before any work with Git, you should configure them globally for each machine you use by typing in a terminal:
-
-```
-$ git config --global user.email "YOUR_EMAIL"
-$ git config --global user.name "YOUR_NAME"
-```
+All commits on git have information about the author with the name and email address. Before any work with Git, you should configure them globally for each machine you use. See [the GitHub documentation][git-setup] to guide you through it.
 
 ## Config auto-remote
 
@@ -18,3 +13,5 @@ When working collaboratively with git, you will need to synchronise your work be
 ```
 $ git config --global --add push.autoSetupRemote true
 ```
+
+[git-setup]: https://docs.github.com/en/get-started/quickstart/set-up-git#setting-up-git

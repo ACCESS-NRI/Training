@@ -592,12 +592,13 @@
 
 
 <h1 id="git-setup">Git setup</h1>
-<p>Make sure you set up git on every machine (including servers such as HPCs for example) you work on.</p>
+<p>Git has many configuration options. This section covers some of the basic options that are recommended. 
+Make sure you set these configuration options on every machine you routinely use, including remote servers such as HPCs.</p>
 <h2 id="configure-name-and-email">Configure name and email</h2>
 <p>All commits on git have information about the author with the name and email address. Before any work with Git, you should configure them globally for each machine you use. See <a href="https://docs.github.com/en/get-started/quickstart/set-up-git#setting-up-git">the GitHub documentation</a> to guide you through it.</p>
 <h2 id="configure-auto-remote">Configure auto-remote</h2>
 <p>When working collaboratively with git, you will need to synchronise your work between your local work area and a remote repository. To remove the need to manually set up the remote connection for each branch, you can set this configuration option:</p>
-<div class="highlight"><pre><span></span><code>$ git config --global --add push.autoSetupRemote true
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>--add<span class="w"> </span>push.autoSetupRemote<span class="w"> </span><span class="nb">true</span>
 </code></pre></div>
 
 

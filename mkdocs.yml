@@ -71,4 +71,5 @@ nav:
     - Git and GitHub:
       - HowTos/GitAndGitHub/index.md
       - Basics: HowTos/GitAndGitHub/basics.md
+      - Git setup: HowTos/GitAndGitHub/git_setup.md
       - GitHub setup: HowTos/GitAndGitHub/github_setup.md
